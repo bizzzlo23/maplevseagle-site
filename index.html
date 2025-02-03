@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MapleVsEagle - The Ultimate Economic War</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #111;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .banner {
+            width: 100%;
+            height: 300px;
+            background: url('banniere.webp') no-repeat center center/cover;
+        }
+        .logo {
+            width: 150px;
+            margin-top: 20px;
+        }
+        .header {
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+        .sub-header {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+        .meme-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .meme {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .vote-container {
+            margin-top: 20px;
+        }
+        .vote-button {
+            background-color: red;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .vote-button:hover {
+            opacity: 0.8;
+        }
+        .result {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        .nav {
+            background-color: black;
+            padding: 15px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 1.2em;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner"></div>
+    <img src="logo.webp" alt="MapleVsEagle Logo" class="logo">
+    
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#vote">Vote</a>
+        <a href="#memes">Memes</a>
+        <a href="#about">About</a>
+    </div>
+    
+    <div class="header">💥 The Great Economic War: Canada 🇨🇦 vs USA 🇺🇸</div>
+    <div class="sub-header">Who will survive the market crash? Vote now! 🔥</div>
+    
+    <div id="home">
+        <p>Welcome to the most ridiculous economic battle in history! The market is crashing, and it's all because of Canada and the USA fighting over... well, who knows?</p>
+    </div>
+    
+    <div id="memes" class="meme-container">
+        <img src="meme ca.webp" alt="Canada Meme" class="meme">
+        <img src="meme usa.webp" alt="USA Meme" class="meme">
+    </div>
+    
+    <div id="vote" class="vote-container">
+        <button class="vote-button" onclick="vote('canada')">🇨🇦 Vote Canada</button>
+        <button class="vote-button" onclick="vote('usa')">🇺🇸 Vote USA</button>
+    </div>
+    
+    <div class="result" id="result">Votes: Canada (0) - USA (0)</div>
+    
+    <div id="about">
+        <h2>About MapleVsEagle</h2>
+        <p>This is a totally non-serious, meme-powered crypto war between Canada and the USA. The markets are in shambles, but the memes are thriving. Join the fun and vote!</p>
+    </div>
+    
+    <script>
+        let votes = { canada: 0, usa: 0 };
+        function vote(country) {
+            votes[country]++;
+            document.getElementById('result').innerText = `Votes: Canada (${votes.canada}) - USA (${votes.usa})`;
+        }
+    </script>
+</body>
+</html>
