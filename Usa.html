@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canada Hype - MapleVsEagle</title>
-    <link rel="icon" type="image/png" href="favicon.webp">
+    <title>USA Hype - MapleVsEagle</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #ff0000;
+            background-color: #0000ff;
             color: white;
             margin: 0;
             padding: 0;
@@ -17,7 +16,7 @@
         .banner {
             width: 100%;
             height: 250px;
-            background: url('canadaban.webp') no-repeat center center/cover;
+            background: url('usabaniere.webp') no-repeat center center/cover;
         }
         .logo {
             width: 150px;
@@ -46,7 +45,7 @@
         .vote-button {
             background-color: white;
             border: none;
-            color: red;
+            color: blue;
             padding: 15px 30px;
             font-size: 1.5em;
             margin: 20px;
@@ -60,8 +59,8 @@
     </style>
 </head>
 <body>
-    <div class="canadaban.webp"></div>
-    <img src="canadalogo.webp" alt="MapleVsEagle Logo" class="logo">
+    <div class="usabaniere.webp"></div>
+    <img src="usalogo.webp" alt="MapleVsEagle Logo" class="logo">
     
     <div class="nav">
         <a href="index.html">Home</a>
@@ -71,22 +70,22 @@
     </div>
     
     <div class="content">
-        <h1>🔥 Canada Will Dominate! 🍁</h1>
-        <p>Join the movement and show your support for Canada in the greatest meme battle of the crypto world!</p>
+        <h1>🔥 USA Will Dominate! 🦅</h1>
+        <p>Join the movement and show your support for the USA in the greatest meme battle of the crypto world!</p>
         
         <div class="video-container">
             <video width="560" height="315" controls>
-                <source src="canada_hype.mp4" type="video/mp4">
+                <source src="usa_hype.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
 
-        <button class="vote-button" onclick="vote('canada')">🇨🇦 Vote for Canada! 🍁</button>
+        <button class="vote-button" onclick="vote('usa')">🇺🇸 Vote for USA! 🦅</button>
     </div>
     
     <script>
         function vote(country) {
-            alert(`You voted for ${country}! Let's go Canada!`);
+            alert(`You voted for ${country}! Let's go USA!`);
         }
     </script>
 </body>
